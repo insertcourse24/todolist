@@ -14,8 +14,8 @@
       <div id="todo-section">
       <todo-block title="ㅁㅇㄴㄹ" date="adsf"></todo-block>
     </div>
-      <button class="create-btn"">+ 작업추가</button>
-      <div class="create-todo">
+      <button class="create-btn" onclick="isShowCreateTodo(this)">+ 작업추가</button>
+      <div class="create-todo" id="create-todo-div">
         <label for="create-title-name">TODO: </label> <input type="text" id="create-title-name">
         <button onclick="createTodo()"">등록</button>
       </div>

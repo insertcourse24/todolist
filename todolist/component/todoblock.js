@@ -23,18 +23,20 @@ class TodoBlock extends HTMLElement {
           display: flex;
           border-top: 1px solid #dedddd;
           padding: 14px 12px;
-          max-width: 800px;
+          max-width: 600px;
           height : 60px;
           box-sizing: border-box;
 
         }
         .todo-block button {
-          height: 10px;
-          width: 10px;
-          padding: 10px;
+          height: 20px;
+          width: 20px;
+          padding: 0px;
           border: 1px solid #d2d2d2;
           border-radius: 100%;
           background-color: white;
+          color:white;
+          cursor: pointer;
         }
 
         .todo-block button:hover {
@@ -57,7 +59,7 @@ class TodoBlock extends HTMLElement {
         }
       </style>
       <div class="todo-block list-block">
-      <button></button>
+      <button onclick='successCheck(this)'></button>
       <div>
         <h6>${this.getAttribute('title') || '타이틀'}</h6>
         <p>${this.getAttribute('date') || '날짜 000월'}</p>
