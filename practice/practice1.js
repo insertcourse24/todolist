@@ -60,7 +60,7 @@ startProgram();
 
 
 //3단계 - 객체 사용해보기
-let calculate = {
+const calculate = {
     num1: parseInt(prompt('첫번째 수를 입력하세요.')),
     operator: prompt('연산자 (+, -, *, /)를 입력하세요.'),
     num2: parseInt(prompt('두번째 수를 입력하세요.')),
@@ -82,4 +82,27 @@ function calculateResult() {
     }
 }
 calculateResult();
+
 //4단계 - 화살표 함수 익히기
+const calculate2 = {
+    num1: parseInt(prompt('첫번째 수를 입력하세요.')),
+    operator: prompt('연산자 (+, -, *, /)를 입력하세요.'),
+    num2: parseInt(prompt('두번째 수를 입력하세요.')),
+}
+
+const calculateResult2 = () => {
+    if(calculate2.operator === '+'){
+        alert(`${calculate2.num1} + ${calculate2.num2} = ${calculate2.num1 + calculate2.num2}`);
+    } else if(calculate2.operator === '-'){
+        alert(`${calculate2.num1} - ${calculate2.num2} = ${calculate2.num1 - calculate2.num2}`);
+    } else if(calculate2.operator === '*'){
+        alert(`${calculate2.num1} * ${calculate2.num2} = ${calculate2.num1 * calculate2.num2}`);
+    } else if(calculate2.operator === '/'){
+        if(calculate2.num2 === 0){
+            alert("0으로 나눌수 없습니다.");
+        } else {
+            alert(`${calculate2.num1} / ${calculate2.num2} = ${calculate2.num1 / calculate2.num2}`);
+        }
+    }
+}
+calculateResult2();
