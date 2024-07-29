@@ -1,22 +1,64 @@
 // Mission 1
 // 1단계 - 계산기 만들기
 let num1 = prompt('첫번째 수를 입력하세요.');
-const yeonsan = prompt('연산자 (+, -, *, /)를 입력하세요.');
+const operater = prompt('연산자 (+, -, *, /)를 입력하세요.');
 let num2 = prompt('두번째 수를 입력하세요.');
 
 const intNum1 = parseInt(num1);
 const intNum2 = parseInt(num2);
 
-if(yeonsan === '+'){
+if(operater === '+'){
     alert(`${num1} + ${num2}는 ${intNum1 + intNum2} 입니다.`);
-} else if(yeonsan === '-'){
+} else if(operater === '-'){
     alert(`${num1} - ${num2}는 ${intNum1 - intNum2} 입니다.`);
-} else if(yeonsan === '*'){
+} else if(operater === '*'){
     alert(`${num1} * ${num2}는 ${intNum1 * intNum2} 입니다.`);
-} else if(yeonsan === '/'){
+} else if(operater === '/'){
     if(num2 === 0){
         alert("0으로는 나눌 수 없습니다.");
     } else {
         alert(`${num1} / ${num2}는 ${intNum1 / intNum2} 입니다.`);
     }
 }
+
+//2단계 - 함수로 분리하기
+//입력을 받아서 변수에 저장하는 함수
+function getInputValues() {
+    const num1 = prompt('첫번째 수를 입력하세요.');
+    const operater = prompt('연산자 (+, -, *, /)를 입력하세요.');
+    const num2 = prompt('두번째 수를 입력하세요.');
+    return {
+        num1: parseInt(num1),
+        num2: parseInt(num2),
+        operator: operater
+    };
+}
+
+//입력값들을 계산해서 alert창으로 띄우는 함수
+function calculateAndShowResult(num1, num2, operator) {
+    if(operator === '+'){
+        alert(`${num1} + ${num2} = ${num1 + num2}`);
+    } else if(operator === '-'){
+        alert(`${num1} - ${num2} = ${num1 - num2}`);
+    } else if(operator === '*'){
+        alert(`${num1} * ${num2} = ${num1 * num2}`);
+    } else if(operator === '/'){
+        if(num2 === 0){
+            alert("0으로 나눌수 없습니다.");
+        } else {
+            alert(`${num1} / ${num2} = ${num1 / num2}`);
+        }
+    }
+}
+
+//프로그램 시작 함수
+function startProgram() {
+    const { num1, num2, operator } = getInputValues();
+    calculateAndShowResult(num1, num2, operator);
+}
+startProgram();
+
+
+//3단계 - 객체 사용해보기
+
+//4단계 - 화살표 함수 익히기
