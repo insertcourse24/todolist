@@ -2,7 +2,13 @@ const todoForm = document.getElementById('todoForm');
 const todoInput = document.querySelector('#todoForm input');
 const todoList = document.getElementById('todoList');
 
-function deleteTodo() {
+let todos = [];
+
+function saveTodos() {
+    localStorage.setItem(todos, JSON.stringify(todos));
+}
+
+function deleteTodo(event) {
     const li = event.target.parentElement;
     li.remove();
 }
@@ -24,7 +30,9 @@ function handleTodoSubmit(event) {
     event.preventDefault();
     const newTodo = todoInput.value;
     todoInput.value = '';
+    todos.push(newTodo);
     paintTodo(newTodo);
+    saveTodos();
 }
 
 todoForm.addEventListener('submit', handleTodoSubmit);
