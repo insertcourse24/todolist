@@ -45,7 +45,7 @@ function isShowCreateTodo(element){
 
 
 function editTodo(element){
-    element.innerText = prompt("변경할 내용을 적어주세요");
+    element.innerText = prompt("변경할 내용을 적어주세요",element.innerText);
 }
 
 function deleteTodo(e){

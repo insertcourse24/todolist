@@ -1,7 +1,7 @@
 <!-- TODO: 일정 추가, 삭제, 수정, 계획 성공 여부 -->
 
 <!DOCTYPE html>
-<html lang="kr">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,22 +9,22 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>TODOLIST</h1>
-    <section id="view-list">
-      <div id="todo-section">
-      <todo-block title="ㅁㅇㄴㄹ" date="adsf"></todo-block>
-    </div>
-      <button class="create-btn" onclick="isShowCreateTodo(this)">+ 작업추가</button>
-      <div class="create-todo" id="create-todo-div">
-        <label for="create-title-name">TODO: </label> <input type="text" id="create-title-name">
-        <button onclick="createTodo()"">등록</button>
-      </div>
-    </section>
-    
+    <main>
+      <h1>TODOLIST</h1>
+      <section id="view-list">
+        <div id="todo-section"></div>
+        <button class="create-btn" onclick="isShowCreateTodo(this)">
+          + 작업추가
+        </button>
+        <div class="create-todo" id="create-todo-div">
+          <label for="create-title-name">TODO: </label>
+          <input type="text" id="create-title-name" />
+          <button onclick="createTodo()">등록</button>
+        </div>
+      </section>
+    </main>
 
     <script src="component/todoblock.js"></script>
-    <script src="script.js">
-    </script>
+    <script src="script.js"></script>
   </body>
-
 </html>
