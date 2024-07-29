@@ -8,18 +8,25 @@ const getInput = () => {
 }
 
 const calculate = ({a, mark, b}) => {
+    let result;
     switch(mark){
         case '+':
-            return a+b;
+            result = a+b;
+            break;
         case '-':
-            return a-b;
+            result = a-b;
+            break;
         case '/':
-            return a/b;
+            result = a/b;
+            break;
         case '*':
-            return a*b;
+            result = a*b;
+            break;
         default:
-            return '잘못된 기호입니다.';
+            alert('잘못된 기호입니다.')
+            return;
     }
+    alert(`${a} ${mark} ${b} = ${result}`);
 }
 
-console.log(calculate(getInput()));
+calculate(getInput());
