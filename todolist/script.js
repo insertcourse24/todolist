@@ -42,3 +42,8 @@ function isShowCreateTodo(element){
     createTodoDiv.classList.toggle('show', createTodoBtn);
     createTodoBtn = !createTodoBtn;
 }
+
+
+function editTodo(element){
+    element.innerText = prompt("변경할 내용을 적어주세요");
+}
