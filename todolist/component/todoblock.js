@@ -36,6 +36,12 @@ class TodoBlock extends HTMLElement {
           border-radius: 100%;
           background-color: white;
         }
+
+        .todo-block button:hover {
+          border: 1px solid #d2d2d2;
+          background-color: #ececec;
+        }
+      
         .todo-block div {
           margin-left: 8px;
         }
