@@ -1,17 +1,16 @@
-const value = {
-    n1 : 0,
-    op : '+',
-    n2 : 0,
-    result : 0,
+let calculate = (n1, op, n2) => {
+    let result
+
+    n1 = parseInt(prompt())
+    op = prompt()
+    n2 = parseInt(prompt())
+
+    if(op == '+') result = n1 + n2
+    else if(op == '-') result = n1 - n2
+    else if(op == '*') result = n1 * n2
+    else if(op == '/') result = n1 / n2
+
+    alert(`${n1}${op}${n2}는 ${result}입니다.`)
 }
 
-value.n1 = parseInt(prompt())
-value.op = prompt()
-value.n2 = parseInt(prompt())
-
-if(value.op == '+') value.result = value.n1 + value.n2
-else if(value.op == '-') value.result = value.n1 - value.n2
-else if(value.op == '*') value.result = value.n1 * value.n2
-else if(value.op == '/') value.result = value.n1 / value.n2
-
-alert(`${value.n1}${value.op}${value.n2}는 ${value.result}입니다.`)
+calculate()
