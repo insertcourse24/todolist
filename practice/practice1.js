@@ -7,8 +7,8 @@ input()
 calculate()
 
 function input() {
-    op = prompt()
     n1 = parseInt(prompt())
+    op = prompt()
     n2 = parseInt(prompt())
     result
 }
