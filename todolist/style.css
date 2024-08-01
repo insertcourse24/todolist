@@ -1,0 +1,57 @@
+body {
+    margin : 0;
+}
+
+header {
+    width : 1440px;
+    height : 64px;
+    background-color : white;
+    padding : 1px 20px 10px 20px
+}
+
+#logo {
+    font-size : 18px;
+}
+
+main {
+    width : 1440px;
+    height : 740px;
+    background-color : #5b75e2;
+    display : flex;
+    align-items: flex-end;
+}
+
+.container {
+    width : 900px;
+    height : 640px;
+    border-radius : 38px 38px 0px 0px;
+    background-color : white;
+    margin : 0 auto;
+    box-shadow : 5px -2px 20px 0.1px #2B2B2B;
+}
+
+#today {
+    font-size : 38px;
+    font-weight : bold;
+    color : #646469;
+    margin-top : 40px;
+    margin-left : 80px;
+}
+
+.insert_button {
+    background-color : #5b75e2;
+    width : 70px;
+    height : 70px;
+    border-radius : 400px;
+    margin-top : 440px;
+    margin-left : 740px;
+}
+
+.insert_button:hover {
+    cursor : pointer;
+}
+
+.insert_button > img {
+    margin-top : 15.4px;
+    margin-left : 15.8px;
+}
