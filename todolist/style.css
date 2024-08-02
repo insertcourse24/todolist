@@ -59,7 +59,7 @@ main {
     width : 700px;
     height : 360px;
     position : absolute;
-    top : 300px;
+    top : 320px;
     left : 376px;
     overflow : auto;
 }
@@ -69,7 +69,7 @@ main {
     height : 60px;
     display : flex;
     align-items : center;
-    margin-bottom : 8px;
+    margin-bottom : 2px;
 }
 
 .todo_list > h1 {
@@ -85,4 +85,18 @@ main {
     background-color : white;
     border : 2px solid #a1a1a1;
     margin-left : 20px;
+}
+
+.underbar {
+    width : 600px;
+    height : 2px;
+    background-color : #a1a1a1;
+    margin-left : 80px;
+    margin-bottom : 34px;
+}
+
+#tasks_h2 {
+    color : blue;
+    margin-top : 4px;
+    margin-left : 90px;
 }
