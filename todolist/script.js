@@ -43,11 +43,16 @@ function isShowCreateTodo(element){
     createTodoBtn = !createTodoBtn;
 }
 
-
+/**
+ * 작업수정하기
+ */
 function editTodo(element){
     element.innerText = prompt("변경할 내용을 적어주세요",element.innerText);
 }
 
+/*
+* 작업삭제하기
+*/
 function deleteTodo(e){
     e.target.parentElement.remove();
 }
