@@ -11,9 +11,7 @@ function cafe() {
 
         let count = parseInt(prompt("몇잔 주문하실건가요?"), 10)
 
-        if(coffee-count >= 0) coffee -= count
-
-        //(coffee-count >= 0) && (coffee -= count)
+        coffee - count >= 0 && (coffee -= count);
 
         let op = !!coffee
 
