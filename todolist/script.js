@@ -9,7 +9,7 @@ const week_index = date.getDay()
 const day = date.getDate()
 const month_index = date.getMonth()
 
-today.innerText = `${week[week_index-1]}, ${day} ${month[month_index]}`
+today.innerText = `${week[week_index]}, ${day} ${month[month_index]}`
 
 const insert = document.getElementById('insert_button')
 
@@ -29,24 +29,28 @@ let count = 0
                 <div class="todo_list">
                     <div class="finish_checkBox"></div>
                     <h1>${todo}</h1>
-                    <button class="success" id="success">Success</button>
-                    <button class="delete" id="delete">Delete</button>
+                    <button class="success">Success</button>
+                    <button class="delete">Delete</div>
                 </div>
-                <div class="underbar">
+                <div class="underbar"/>
             `
     
         div.appendChild(text)
 
         // 일정 삭제 코드
-        const delete_id = document.getElementById('delete')
-
-        delete_id.addEventListener('click', (e) => {
-            const todo_listDel = e.target.parentElement
-            todo_listDel.remove()
+        const deleteButton = text.querySelector('.delete')
+        deleteButton.addEventListener('click', () => {
+            text.remove()
+            count -= 1
+            const task = document.getElementById('tasks_h2')
+            task.innerText = `${count} tasks`
         })
+        
+
+        // 일정 수정 코드
 
 
-        // 일정 개수 변경 코드
+        // 일정 추가했을 때 1씩 추가하는 코드
         count+=1
         const task = document.getElementById('tasks_h2')
     
