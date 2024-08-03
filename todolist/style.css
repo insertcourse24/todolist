@@ -80,6 +80,13 @@ main {
     cursor : pointer;
 }
 
+.todo_list > img {
+    position : absolute;
+    top : 14px;
+    left : 12px;
+    opacity : 0;
+}
+
 .finish_checkBox {
     border-radius : 50%;
     width : 30px;

@@ -28,6 +28,7 @@ let count = 0
             `
                 <div class="todo_list">
                     <div class="finish_checkBox"></div>
+                    <img src="./check.png" width="44px" height="34px"/>
                     <h1>${todo}</h1>
                     <button class="success">Success</button>
                     <button class="delete">Delete</div>
@@ -37,8 +38,23 @@ let count = 0
     
         div.appendChild(text)
 
+        // 일정 성공 코드
+        const successButton = text.querySelector('.success')
+
+        successButton.addEventListener('click', () => {
+            const todoList = text.querySelector('.todo_list')
+
+            const finishCheckBox = todoList.querySelector('.finish_checkBox')
+            const checkImg = todoList.querySelector('img[src="./check.png"]')
+
+            finishCheckBox.style.opacity = 0
+            checkImg.style.opacity = 1
+            
+        })
+
         // 일정 삭제 코드
         const deleteButton = text.querySelector('.delete')
+
         deleteButton.addEventListener('click', () => {
             text.remove()
             count -= 1
