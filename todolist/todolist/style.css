@@ -40,3 +40,22 @@ body {
     line-height: 2em;
     list-style: none;
 }
+
+#todoList > li {
+    width: 80vw;
+    margin: 0 auto;
+    /* background-color: aqua; */
+}
+
+#todoList > li > input[type="checkbox"] {
+    width: 2vw;
+    height: auto;
+    zoom: 3;
+    accent-color: purple;
+}
+
+#todoList > li > button {
+    width: 4vw;
+    height: 2em;
+    margin: 0 2em;
+}
