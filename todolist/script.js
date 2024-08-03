@@ -29,13 +29,22 @@ let count = 0
                 <div class="todo_list">
                     <div class="finish_checkBox"></div>
                     <h1>${todo}</h1>
-                    <div class="success">Success</div>
-                    <div class="delete">Delete</div>
+                    <button class="success" id="success">Success</button>
+                    <button class="delete" id="delete">Delete</button>
                 </div>
                 <div class="underbar">
             `
     
         div.appendChild(text)
+
+        // 일정 삭제 코드
+        const delete_id = document.getElementById('delete')
+
+        delete_id.addEventListener('click', (e) => {
+            const todo_listDel = e.target.parentElement
+            todo_listDel.remove()
+        })
+
 
         // 일정 개수 변경 코드
         count+=1

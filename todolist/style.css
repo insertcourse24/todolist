@@ -70,7 +70,6 @@ main {
     display : flex;
     align-items : center;
     margin-bottom : -4px;
-    cursor : pointer;
     position : relative;
 }
 
@@ -78,6 +77,7 @@ main {
     color : #474747;
     font-size : 26px;
     margin-left : 30px;
+    cursor : pointer;
 }
 
 .finish_checkBox {
@@ -105,24 +105,30 @@ main {
 
 .success {
     width : 70px;
-    height : 30px;
+    height : 40px;
     background-color : #44d144;
     border-radius : 8px;
     text-align : center;
-    padding-top : 10px;
+    padding-top : 4px;
     font-weight : bold;
+    font-size : 14px;
     position : absolute;
     right : 100px;
+    cursor : pointer;
+    border : none;
 }
 
 .delete {
     width : 70px;
-    height : 30px;
+    height : 40px;
     background-color : #ff3d3d;
     border-radius : 8px;
     text-align : center;
-    padding-top : 13px;     
+    padding-top : 5px;     
     font-weight : bold;
+    font-size : 14px;
     position : absolute;
     right : 20px;
+    cursor : pointer;
+    border : none;
 }
