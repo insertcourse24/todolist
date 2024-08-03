@@ -29,7 +29,7 @@ let count = 0
                 <div class="todo_list">
                     <div class="finish_checkBox"></div>
                     <img src="./check.png" width="44px" height="34px"/>
-                    <h1>${todo}</h1>
+                    <h1 id="modify">${todo}</h1>
                     <button class="success">Success</button>
                     <button class="delete">Delete</div>
                 </div>
@@ -42,6 +42,7 @@ let count = 0
         const successButton = text.querySelector('.success')
 
         successButton.addEventListener('click', () => {
+            alert('계획 성공을 축하드립니다! 남은 계획들도 화이팅!!')
             const todoList = text.querySelector('.todo_list')
 
             const finishCheckBox = todoList.querySelector('.finish_checkBox')
@@ -64,7 +65,13 @@ let count = 0
         
 
         // 일정 수정 코드
+        const modify = document.getElementById('modify')
 
+        modify.addEventListener('click', () => {
+            const modify_text = prompt("계획을 어떻게 수정하실건가요?")
+
+            modify.innerText = `${modify_text}`
+        })
 
         // 일정 추가했을 때 1씩 추가하는 코드
         count+=1
@@ -73,12 +80,3 @@ let count = 0
         task.innerText = `${count} tasks`
     }
  })
-
- 
-
-
-
-
-
-
-
