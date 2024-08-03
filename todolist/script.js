@@ -58,6 +58,7 @@ let count = 0
 
         deleteButton.addEventListener('click', () => {
             text.remove()
+
             count -= 1
             const task = document.getElementById('tasks_h2')
             task.innerText = `${count} tasks`
@@ -65,10 +66,10 @@ let count = 0
         
 
         // 일정 수정 코드
-        const modify = document.getElementById('modify')
+        const modify = text.querySelector('#modify')
 
         modify.addEventListener('click', () => {
-            const modify_text = prompt("계획을 어떻게 수정하실건가요?")
+            const modify_text = prompt('계획을 어떻게 수정하실건가요?')
 
             modify.innerText = `${modify_text}`
         })
