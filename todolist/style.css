@@ -42,7 +42,7 @@ main {
     width : 70px;
     height : 70px;
     border-radius : 400px;
-    margin-top : 440px;
+    margin-top : 400px;
     margin-left : 740px;
 }
 
@@ -69,7 +69,9 @@ main {
     height : 60px;
     display : flex;
     align-items : center;
-    margin-bottom : 2px;
+    margin-bottom : -4px;
+    cursor : pointer;
+    position : relative;
 }
 
 .todo_list > h1 {
@@ -97,6 +99,30 @@ main {
 
 #tasks_h2 {
     color : blue;
-    margin-top : 4px;
-    margin-left : 90px;
+    margin-top : 14px;
+    margin-left : 100px;
+}
+
+.success {
+    width : 70px;
+    height : 30px;
+    background-color : #44d144;
+    border-radius : 8px;
+    text-align : center;
+    padding-top : 10px;
+    font-weight : bold;
+    position : absolute;
+    right : 100px;
+}
+
+.delete {
+    width : 70px;
+    height : 30px;
+    background-color : #ff3d3d;
+    border-radius : 8px;
+    text-align : center;
+    padding-top : 13px;     
+    font-weight : bold;
+    position : absolute;
+    right : 20px;
 }
