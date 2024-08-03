@@ -5,7 +5,7 @@ const inputString = prompt('문장을 입력하세요.(10글자 미만: 10원, 1
 const length = inputString.length;
 const isEmpty = length === 0;
 
-if (!!isEmpty) {
+if (!!inputString) {
     alert('공백입니다.');
 } else if (length < 10) {
     alert(`${length}자 입력, 10원이 부과됩니다. 메세지를 보내려면 확인을 눌러주세요.`);
