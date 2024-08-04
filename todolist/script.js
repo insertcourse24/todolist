@@ -71,7 +71,10 @@ let count = 0
         modify.addEventListener('click', () => {
             const modify_text = prompt('계획을 어떻게 수정하실건가요?')
 
-            modify.innerText = `${modify_text}`
+            if(!modify_text.length) alert('공백은 입력이 불가합니다!')
+            else {
+                modify.innerText = `${modify_text}`
+            }
         })
 
         // 일정 추가했을 때 1씩 추가하는 코드
