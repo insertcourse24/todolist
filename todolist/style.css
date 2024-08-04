@@ -3,9 +3,9 @@ body {
 }
 
 header {
-    height : 64px;
+    height : 8vh;
     background-color : white;
-    padding : 1px 20px 10px 20px
+    padding : 1px 20px 10px 40px
 }
 
 #logo {
@@ -13,16 +13,16 @@ header {
 }
 
 main {
-    width : 1440px;
-    height : 740px;
+    width : 100vw;
+    height : 91vh;
     background-color : #5b75e2;
     display : flex;
     align-items: flex-end;
 }
 
 .container {
-    width : 900px;
-    height : 640px;
+    width : 66vw;
+    height : 78vh;
     border-radius : 38px 38px 0px 0px;
     background-color : white;
     margin : 0 auto;
@@ -33,8 +33,8 @@ main {
     font-size : 38px;
     font-weight : bold;
     color : #646469;
-    margin-top : 40px;
-    margin-left : 80px;
+    margin-top : 5vh;
+    margin-left : 5vw;
 }
 
 #insert_button {
@@ -42,8 +42,8 @@ main {
     width : 70px;
     height : 70px;
     border-radius : 400px;
-    margin-top : 400px;
-    margin-left : 740px;
+    margin-top : 48vh;
+    margin-left : 54vw;
 }
 
 #insert_button:hover {
@@ -56,17 +56,17 @@ main {
 }
 
 #text_box {
-    width : 700px;
-    height : 360px;
+    width : 66vw;
+    height : 44vh;
     position : absolute;
-    top : 320px;
-    left : 376px;
+    top : 41vh;
+    left : 25vw;
     overflow : auto;
 }
 
 .todo_list {
     width : 100%;
-    height : 60px;
+    height : 8vh;
     display : flex;
     align-items : center;
     margin-bottom : -4px;
@@ -120,7 +120,7 @@ main {
     font-weight : bold;
     font-size : 14px;
     position : absolute;
-    right : 100px;
+    right : 24.5vw;
     cursor : pointer;
     border : none;
 }
@@ -135,7 +135,7 @@ main {
     font-weight : bold;
     font-size : 14px;
     position : absolute;
-    right : 20px;
+    right : 19vw;
     cursor : pointer;
     border : none;
 }
