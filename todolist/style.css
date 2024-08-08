@@ -1,0 +1,143 @@
+body {
+    margin : 0;
+}
+
+header {
+    height : 8vh;
+    background-color : white;
+    padding : 1vh 0vh 1vh 4vw;
+}
+
+#logo {
+    font-size : 18px;
+}
+
+main {
+    width : 100vw;
+    height : 91vh;
+    background-color : #5b75e2;
+    display : flex;
+    align-items: flex-end;
+}
+
+.container {
+    width : 66vw;
+    height : 78vh;
+    border-radius : 38px 38px 0px 0px;
+    background-color : white;
+    margin : 0 auto;
+    box-shadow : 5px -2px 20px 0.1px #2B2B2B;
+}
+
+#today {
+    font-size : 2.5rem;
+    font-weight : bold;
+    color : #646469;
+    margin-top : 5vh;
+    margin-left : 5vw;
+}
+
+#insert_button {
+    background-color : #5b75e2;
+    width : 5vw;
+    height : 8.5vh;
+    border-radius : 400px;
+    margin-top : 48vh;
+    margin-left : 54vw;
+}
+
+#insert_button:hover {
+    cursor : pointer;
+}
+
+#insert_button > img {
+    margin-top : 1.6vh;
+    margin-left : 1.16vw;
+    width : 2.8vw;
+    height : 5.4vh;
+}
+
+#text_box {
+    width : 66vw;
+    height : 44vh;
+    position : absolute;
+    top : 41vh;
+    left : 25vw;
+    overflow : auto;
+}
+
+.todo_list {
+    width : 100%;
+    height : 8vh;
+    display : flex;
+    align-items : center;
+    margin-bottom : -4px;
+    position : relative;
+}
+
+.todo_list > h1 {
+    color : #474747;
+    font-size : 2rem;
+    margin-left : 3.5vw;
+    cursor : pointer;
+}
+
+.todo_list > img {
+    position : absolute;
+    top : 14px;
+    left : 12px;
+    opacity : 0;
+}
+
+.finish_checkBox {
+    border-radius : 50%;
+    width : 30px;
+    height : 30px;
+    background-color : white;
+    border : 2px solid #a1a1a1;
+    margin-left : 20px;
+}
+
+.underbar {
+    width : 42vw;
+    height : 0.3vh;
+    background-color : #a1a1a1;
+    margin-left : 6vw;
+    margin-bottom : 3vh;
+}
+
+#tasks_h2 {
+    color : blue;
+    margin-top : 1.4vh;
+    margin-left : 7vw;
+}
+
+.success {
+    width : 5vw;
+    height : 4.9vh;
+    background-color : #44d144;
+    border-radius : 8px;
+    text-align : center;
+    padding-top : 0.3vh;
+    font-weight : bold;
+    font-size : 0.92rem;
+    position : absolute;
+    right : 24.5vw;
+    cursor : pointer;
+    border : none;
+}
+
+.delete {
+    width : 5vw;
+    height : 4.9vh;
+    background-color : #ff3d3d;
+    border-radius : 8px;
+    text-align : center;
+    padding-top : 0.3vh;     
+    font-weight : bold;
+    font-size : 0.92rem;
+    position : absolute;
+    right : 19vw;
+    cursor : pointer;
+    border : none;
+}
