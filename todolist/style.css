@@ -5,7 +5,7 @@ body {
 header {
     height : 8vh;
     background-color : white;
-    padding : 1px 20px 10px 40px
+    padding : 1vh 0vh 1vh 4vw;
 }
 
 #logo {
@@ -30,7 +30,7 @@ main {
 }
 
 #today {
-    font-size : 38px;
+    font-size : 2.5rem;
     font-weight : bold;
     color : #646469;
     margin-top : 5vh;
@@ -39,8 +39,8 @@ main {
 
 #insert_button {
     background-color : #5b75e2;
-    width : 70px;
-    height : 70px;
+    width : 5vw;
+    height : 8.5vh;
     border-radius : 400px;
     margin-top : 48vh;
     margin-left : 54vw;
@@ -51,8 +51,10 @@ main {
 }
 
 #insert_button > img {
-    margin-top : 15.4px;
-    margin-left : 15.8px;
+    margin-top : 1.6vh;
+    margin-left : 1.16vw;
+    width : 2.8vw;
+    height : 5.4vh;
 }
 
 #text_box {
@@ -75,8 +77,8 @@ main {
 
 .todo_list > h1 {
     color : #474747;
-    font-size : 26px;
-    margin-left : 30px;
+    font-size : 2rem;
+    margin-left : 3.5vw;
     cursor : pointer;
 }
 
@@ -97,28 +99,28 @@ main {
 }
 
 .underbar {
-    width : 600px;
-    height : 2px;
+    width : 42vw;
+    height : 0.3vh;
     background-color : #a1a1a1;
-    margin-left : 80px;
-    margin-bottom : 34px;
+    margin-left : 6vw;
+    margin-bottom : 3vh;
 }
 
 #tasks_h2 {
     color : blue;
-    margin-top : 14px;
-    margin-left : 100px;
+    margin-top : 1.4vh;
+    margin-left : 7vw;
 }
 
 .success {
-    width : 70px;
-    height : 40px;
+    width : 5vw;
+    height : 4.9vh;
     background-color : #44d144;
     border-radius : 8px;
     text-align : center;
-    padding-top : 4px;
+    padding-top : 0.3vh;
     font-weight : bold;
-    font-size : 14px;
+    font-size : 0.92rem;
     position : absolute;
     right : 24.5vw;
     cursor : pointer;
@@ -126,14 +128,14 @@ main {
 }
 
 .delete {
-    width : 70px;
-    height : 40px;
+    width : 5vw;
+    height : 4.9vh;
     background-color : #ff3d3d;
     border-radius : 8px;
     text-align : center;
-    padding-top : 5px;     
+    padding-top : 0.3vh;     
     font-weight : bold;
-    font-size : 14px;
+    font-size : 0.92rem;
     position : absolute;
     right : 19vw;
     cursor : pointer;
